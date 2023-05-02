@@ -2,4 +2,10 @@
   background-image: url("assets/sbimg.png") ;
   min-height: 800px;
   max-width: 800px;
+  
+  }
+
+  .score {
+    font-size: 140px;
+    background-color: antiquewhite;
   }

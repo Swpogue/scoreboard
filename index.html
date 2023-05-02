@@ -16,45 +16,49 @@
 
   <main class="container-fluid bg-dark p-5 bgimg img-fluid">
 
+    <section class="row text-dark justify-content-between">
+      <div class="col-5">
+        <h1 class="text-center">COWBOYS</h1>
+      </div>
+      <div class="col-5">
+        <h1 class="text-center">SEAHAWKS</h1>
+      </div>
+    </section>
 
-<section>
-<div>
-  <h1>AWAY</h1>
-</div>
-<div>
-  <h1>HOME</h1>
-</div>
-
-</section>
-
-    <section class="row scoreboard">
-      
-      <div class="col card display-1"><span id="away-score">00</span></div>
-      <div class="col card display-1"><span id="home-score">00</span></div>
+    <section class="row scoreboard justify-content-between">
+      <div class="col-5 card shadow-lg score"><span id="away-score" class="text-center">0</span></div>
+      <div class="col-5 card shadow-lg score"><span id="home-score" class="text-center">0</span></div>
     </section>
 
 
-    <section class="row align-content-between">
-      
-        <div class="col-6">
-          <button><span onclick="plusOneAway()">+1</span></button>
-          <button><span onclick="plusThreeAway()">+3</span></button>
-          <button><span onclick="plusSevenAway()">+7</span></button>
-        </div>
+    <section class="row justify-content-between">
+      <div class="col-5 pt-3 text-center text">
+        <button class="m-2 rounded"><span onclick="plusOneAway()">Extra Point</span></button>
+        <button class="m-2 rounded"><span onclick="plusThreeAway()">Field Goal</span></button>
+        <button class="m-2 mdi mdi-football rounded"><span onclick="plusSevenAway()">TouchDown</span></button>
+      </div>
 
-        <div class="col-6">
-          <button><span onclick="plusOneHome()">+1</span></button>
-          <button><span onclick="plusThreeHome()">+3</span></button>
-          <button><span onclick="plusSevenHome()">+7</span></button>
-        </div>
-      
-
+      <div class="col-5 pt-3 text-center text">
+        <button class="m-2 rounded"><span onclick="plusOneHome()">Extra Point</span></button>
+        <button class="m-2 rounded"><span onclick="plusThreeHome()">Field Goal</span></button>
+        <button class="m-2 rounded mdi mdi-football"><span onclick="plusSevenHome()">TouchDown</span></button>
+      </div>
     </section>
-    <div>
-      <button onclick="resetForm()">Reset</button>
-    </div>
+
+    <section class="row">
+      <div class="col-5"></div>
+      <div class="col-5">
+        <button onclick="resetForm()" class="btn btn-primary">Reset</button>
+      </div>
+    </section>
+
+    <footer class="card score mt-1">
+      <P>SEAHAWKS RULE!</P>
+
+    </footer>
 
   </main>
+
 </body>
 <script src="app.js"></script>
 

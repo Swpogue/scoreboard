@@ -8,14 +8,14 @@ function plusOneAway() {
   console.log("away score",awayScore);
   drawAway()
 }
-function plusSevenAway() {
-  awayScore += 7
+function plusThreeAway() {
+  awayScore += 3
   
   console.log("away score",awayScore);
   drawAway()
 }
-function plusThreeAway() {
-  awayScore += 3
+function plusSevenAway() {
+  awayScore += 6
   
   console.log("away score",awayScore);
   drawAway()
@@ -37,7 +37,7 @@ function plusThreeHome() {
 }
 
 function plusSevenHome() {
-  homeScore += 7
+  homeScore += 6
   
   console.log("home score",homeScore);
   drawHome()
