@@ -21,7 +21,6 @@ function plusSevenAway() {
   drawAway()
 }
 
-
 function plusOneHome() {
   homeScore ++
   
@@ -42,8 +41,6 @@ function plusSevenHome() {
   console.log("home score",homeScore);
   drawHome()
 }
-
-
 
 function drawHome() {
   let hScoreElem = document.getElementById("home-score")
